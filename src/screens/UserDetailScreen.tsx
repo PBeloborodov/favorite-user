@@ -33,3 +33,4 @@ export const UserDetailScreen = ({ route }) => {
     </View>
   );
 };
+//
