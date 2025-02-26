@@ -1,15 +1,25 @@
-import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer } from "@react-navigation/native";
-import { UserListScreen } from "../screens/UserListScreen";
-import { UserDetailScreen } from "../screens/UserDetailScreen";
+import { DefaultTheme, NavigationContainer } from "@react-navigation/native";
+import React from "react";
 import { RootStackParamList } from "../types";
+import { UserDetailScreen } from "../screens/UserDetailScreen";
+import { UserListScreen } from "../screens/UserListScreen";
+import { useTheme } from "../hooks/UseTheme";
 
 const Stack = createStackNavigator<RootStackParamList>();
 
 export const AppNavigator = () => {
+  const { colorTheme } = useTheme();
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      theme={{
+        ...DefaultTheme,
+        colors: {
+          ...DefaultTheme.colors,
+          background: colorTheme.colorBackground,
+        },
+      }}
+    >
       <Stack.Navigator>
         <Stack.Screen
           name="UserList"

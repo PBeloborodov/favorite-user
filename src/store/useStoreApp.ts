@@ -10,10 +10,12 @@ type UserStore = {
   toggleFavorite: (user: User) => void;
   loadFavorites: () => Promise<void>;
   theme: Theme;
+  loadTheme: () => Promise<void>;
+  toggleTheme: () => void;
 };
 type Theme = "light" | "dark";
 
-export const useUserStore = create<UserStore>((set, get) => ({
+export const useStoreApp = create<UserStore>((set, get) => ({
   users: [],
   favorites: [],
   theme: "light",
