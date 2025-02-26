@@ -1,6 +1,6 @@
 import { TextInput, StyleSheet } from "react-native";
 import React, { FC } from "react";
-import { ColorTheme, useTheme } from "../../../hooks/UseTheme";
+import { ColorTheme, useTheme } from "@hooks/UseTheme";
 
 type Props = {
   search: string;

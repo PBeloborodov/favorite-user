@@ -12,9 +12,9 @@ import { StackNavigationProp } from "@react-navigation/stack";
 import { RootStackParamList, User } from "../../types";
 import Search from "./components/Search";
 import ItemUser from "./components/ItemUser";
-import { useStoreApp } from "../../store/useStoreApp";
-import IconTheme from "../../assets/svg/icon-theme";
-import { useTheme } from "../../hooks/UseTheme";
+import { useStoreApp } from "@store/useStoreApp";
+import IconTheme from "@assets/svg/icon-theme";
+import { useTheme } from "@hooks/UseTheme";
 
 type Props = {
   navigation: StackNavigationProp<RootStackParamList, "UserList">;

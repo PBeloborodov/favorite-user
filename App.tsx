@@ -1,8 +1,8 @@
 import React from "react";
 import { SafeAreaView, StatusBar } from "react-native";
 import { AppNavigator } from "./src/navigation/AppNavigator";
-import { useStoreApp } from "./src/store/useStoreApp";
-import { useTheme } from "./src/hooks/UseTheme";
+import { useStoreApp } from "@store/useStoreApp";
+import { useTheme } from "@hooks/UseTheme";
 
 const App = () => {
   const { theme } = useStoreApp();

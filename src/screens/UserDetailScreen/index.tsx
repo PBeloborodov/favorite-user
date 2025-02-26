@@ -1,9 +1,9 @@
 import React, { FC, useState } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
-import { useStoreApp } from "../../store/useStoreApp";
+import { useStoreApp } from "@store/useStoreApp";
 import { RouteProp } from "@react-navigation/native";
 import { RootStackParamList } from "../../types";
-import { useTheme } from "../../hooks/UseTheme";
+import { useTheme } from "@hooks/UseTheme";
 type Props = {
   route: RouteProp<RootStackParamList, "UserDetail">;
 };

@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import Animated, { FadeInRight } from "react-native-reanimated";
 import { RootStackParamList, User } from "../../../types";
 import { StackNavigationProp } from "@react-navigation/stack";
-import { ColorTheme, useTheme } from "../../../hooks/UseTheme";
+import { ColorTheme, useTheme } from "@hooks/UseTheme";
 
 type Props = {
   navigation: StackNavigationProp<RootStackParamList, "UserList">;
