@@ -46,8 +46,6 @@ export const UserListScreen: FC<Props> = ({ navigation }) => {
           <IconTheme color={colorTheme.colorText} />
         </TouchableOpacity>
       ),
-      headerTintColor: theme === "light" ? "#000" : "#fff",
-      headerStyle: { backgroundColor: theme === "light" ? "#fff" : "#000" },
     });
   }, [navigation, theme]);
 

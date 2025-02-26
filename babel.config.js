@@ -4,7 +4,21 @@ module.exports = {
         ['@babel/plugin-transform-class-properties', { loose: true }],
         ['@babel/plugin-transform-private-methods', { loose: true }],
         ['@babel/plugin-transform-private-property-in-object', { loose: true }],
-        'react-native-reanimated/plugin'
+        'react-native-reanimated/plugin',
+        [
+            "module-resolver",
+            {
+              root: ["./src"],
+              alias: {
+                "@components": "./src/components",
+                "@screens": "./src/screens",
+                "@store": "./src/store",
+                "@hooks": "./src/hooks",
+                "@assets": "./src/assets",
+                "@types": "./src/types",
+              }
+            }
+          ]
       ],
     
   };
